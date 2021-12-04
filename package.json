@@ -1,0 +1,26 @@
+{
+  "name": "my-team-page-master",
+  "version": "1.0.0",
+  "description": "Solucion de challenge frontend, diseño tomado de https://devchallenges.io/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloBeltran24/my-team-page-master.git"
+  },
+  "keywords": [
+    "Frontend",
+    "devChallenge",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Christian Camilo Beltran Fonseca <cambelf.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CamiloBeltran24/my-team-page-master/issues"
+  },
+  "homepage": "https://github.com/CamiloBeltran24/my-team-page-master#readme"
+}
