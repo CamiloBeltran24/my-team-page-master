@@ -1,0 +1,72 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: max-content;
+  gap: 1rem;
+  padding: 2rem;
+  .main-text {
+    grid-column: 1 / 3;
+    h1 {
+      font-family: $font2;
+      font-size: 3.6rem;
+      margin: 3.8rem 0;
+      line-height: 48px;
+      letter-spacing: -0.045em;
+    }
+    .description {
+      width: 100%;
+      p:first-child {
+        margin-bottom: 1rem;
+        font-family: $font;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      p {
+        font-family: $font;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .team-container {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: minmax(100px, 160px) minmax(100px, 160px);
+    column-gap: 1.5rem;
+    grid-auto-rows: minmax(max-content, 300px);
+    place-content: center;
+    margin-top: 5rem;
+    .team-mate {
+      position: relative;
+      display: flex;
+      max-width: 300px;
+      padding: 0 1.5rem 1.5rem 0;
+      flex-direction: column;
+      .position {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: uppercase;
+        font-family: $font2;
+        font-size: 1.2em;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        writing-mode: vertical-lr;
+      }
+      img {
+        width: 100%;
+        margin: 0 auto 0 0;
+      }
+      .name {
+        font-family: $font;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 1rem;
+      }
+      &:nth-child(2n) {
+        align-self: end;
+      }
+    }
+  }
+}

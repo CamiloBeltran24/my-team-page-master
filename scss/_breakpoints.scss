@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  // .grid-container {
+  //   padding: 110px 240px;
+  // }
+  .grid-container {
+    padding: 4rem 2rem 0;
+    grid-template-columns: repeat(3, minmax(100px, 240px));
+    place-content: center;
+    gap: 5rem;
+    .main-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      grid-column: 1/4;
+      h1 {
+        margin: 0;
+      }
+      p {
+        padding: 0 5rem;
+      }
+    }
+    .team-container {
+      grid-column: 1/4;
+      grid-template-columns: repeat(3, minmax(100px, 240px));
+      grid-auto-rows: 440px;
+      gap: 5rem;
+      .team-mate {
+        &:nth-child(2n) {
+          align-self: start;
+        }
+        &:nth-child(2),
+        &:nth-child(5) {
+          align-self: end;
+        }
+      }
+    }
+  }
+}
