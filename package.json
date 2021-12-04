@@ -4,7 +4,8 @@
   "description": "Solucion de challenge frontend, diseño tomado de https://devchallenges.io/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/CamiloBeltran24/my-team-page-master/issues"
   },
-  "homepage": "https://github.com/CamiloBeltran24/my-team-page-master#readme"
+  "homepage": "https://github.com/CamiloBeltran24/my-team-page-master#readme",
+  "devDependencies": {
+    "sass": "^1.44.0",
+    "webpack-dev-server": "^4.6.0"
+  }
 }
